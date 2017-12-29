@@ -28,6 +28,7 @@ int rru_close_device(){
 }
 
 int rru_read_reg(int id, unsigned reg){
+     // printf("Read: id = %d, reg = %x\n", id, reg);
     int ret;
     plip_iocReg_t iocReg;
 
@@ -39,6 +40,7 @@ int rru_read_reg(int id, unsigned reg){
 }
 
 int rru_write_reg(int id, unsigned reg, unsigned value){
+    // printf("Write: id = %d, reg = %x, value = %x\n", id, reg, value);
     int ret;
     plip_iocReg_t iocReg;
 
